@@ -4,3 +4,6 @@ class Calc:
 
 	def sub (self, a, b):
 		return a-b
+	
+	def version (self):
+		print "Version 3.X"
