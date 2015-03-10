@@ -1,5 +1,6 @@
 from Calc import Calc
 import unittest
+import xmlrunner
 
 class TestCal (unittest.TestCase):
 	def setUp(self):
@@ -9,5 +10,6 @@ class TestCal (unittest.TestCase):
 		self.assertEqual(self.calc.sum(2,2),4)
 		
 if __name__ == '__main__':
-	suite = unittest.TestLoader().loadTestsFromTestCase(TestCal)
-	unittest.TextTestRunner(verbosity=2).run(suite)
+	#suite = unittest.TestLoader().loadTestsFromTestCase(TestCal)
+	#unittest.TextTestRunner(verbosity=2).run(suite)
+	unittest.main(testRunner=xmlrunner.XMLTestRunner(output='test-reports'))
