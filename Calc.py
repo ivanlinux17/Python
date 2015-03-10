@@ -6,4 +6,4 @@ class Calc:
 		return a-b
 	
 	def version (self):
-		print "Version 3.X"
+		print "Version 4.X"
