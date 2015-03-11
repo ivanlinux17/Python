@@ -1,5 +1,5 @@
 from Calc import Calc
-import unittest
+from xmlrunner.unittest import unittest
 import xmlrunner
 
 class TestCal (unittest.TestCase):
