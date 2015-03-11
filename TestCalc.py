@@ -15,7 +15,7 @@ class TestCal (unittest.TestCase):
 		self.assertEqual(self.calc.sum(2,3),6)
 
 	def test_02_sub (self):
-		print "2 minus 2 = %d" self.calc.sub(2,2)
+		print "2 minus 2 = %d" %self.calc.sub(2,2)
 		self.assertEqual(self.calc.sub(2,2),0)
 		
 if __name__ == '__main__':
