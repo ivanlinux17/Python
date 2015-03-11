@@ -21,4 +21,5 @@ class TestCal (unittest.TestCase):
 if __name__ == '__main__':
 	#suite = unittest.TestLoader().loadTestsFromTestCase(TestCal)
 	#unittest.TextTestRunner(verbosity=2).run(suite)
-	unittest.main(testRunner=xmlrunner.XMLTestRunner(output='test-reports'))
+
+	unittest.main(testRunner=xmlrunner.XMLTestRunner(output='test-reports', verbosity=3))
